@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paashu Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header id="header">
+        <div class="container">
+
+            <nav>
+                <img src="./images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Priyanshu Saraswat </span><br>  From Gurgaon</h1>
+            </div>
+
+        </div>
+    </header>
+<!-- -----------------About----------------- -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/photo.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">
+                        About Me
+                    </h1>
+                    <p>
+                        Experienced Web Developer adept in all stages of advanced web development. Proficient in various platforms, languages, and embedded systems. Knowledgeable in user interface, and debugging processes.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills" >
+                        <ul>
+                            <li><span>Responsive Design</span><br> Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Front end Design</span><br>Design with Framework</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Aug 2023 - Current</span><br> Web Developer at Dedrock</li>
+                            <li><span>Feb 2023 - July 2023</span><br>Web Developer at fridayocean</li>
+                            
+                            <li><span>2022 </span><br>Web Developer at SN Digitech</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span> Full Stack Development</span><br> Web Development training at AIT</li>
+                            <li><span>2023</span><br>Diploma from GP Manesar</li>
+                            <li><span>2020</span><br>High School from GSSS Carterpuri</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- -----------------Services----------------- -->
+    <section class="services" id="services">
+        <div class="container">
+            <h1 class="sub-title">
+                My Services 
+            </h1>
+            <div class="services-list"> 
+                <div class="">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Experienced Web Developer and fully provide the web design, landing pages and more .</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="">
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI Design</h2>
+                    <p>Fully provides figma design, wire frames designs native design and more .</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="">
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Development</h2>
+                    <p>Providing Fully functional websites, pages portals figma to code and more .</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+   <!-- -----------------Portfolio----------------- --> 
+    <section class="portfolio" id="portfolio">
+
+        <div class="container">
+            <h1 class="sub-title">
+                My Work
+            </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png" >
+                    <div class="layer">
+                        <h3>E-commerce Website</h3>
+                        <p>In it you can purchase your aesthetic tshirt, joggers, oversized t-shirt and many more..</p>
+                        <a href="https://dedrock.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png" >
+                        <div class="layer">
+                        <h3>Client Website</h3>
+                        <p>Created a web site of a client that provide floral decor services.</p>
+                        <a href="https://gurujiflowers.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png" >
+                    <div class="layer">
+                        <h3> Company official Site</h3>
+                        <p>Fully Launched the official website of fridayocean that provide it services.</p>
+                        <a href="https://fridayocean.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+
+    </section>
+
+    <!-- ------------------Contact--------------- -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> saraswatpriyanshu29@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 9310390552</p>  
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/geniusparmatma.saraswat/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/thenameispaashu/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/priyanshu-saraswat-628bb0183/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./images/Priyanshu Saraswat.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Paashu. </p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
