@@ -25,7 +25,7 @@ nav .fas{
     header nav ul{
         position: fixed;
         top: 0;
-        right: 0;
+        right: -200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
